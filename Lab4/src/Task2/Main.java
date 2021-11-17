@@ -32,6 +32,6 @@ public class Main
         System.out.println();
 
         System.out.println(
-                "SpeedUp (timeFox / timeFoxForkJoin): " + (double) 4138 / (currentTime / 1_000_000));
+                "Speed up (Fox / FoxForkJoin): " + (double) 4138 / (currentTime / 1_000_000));
     }
 }

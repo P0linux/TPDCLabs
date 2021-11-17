@@ -28,9 +28,9 @@ public class Main
         wordsCounts = WordsCounter.getWordsCount(words);
         long currentTimeSimple = System.nanoTime() - currentTime;
 
-        System.out.printf("Execution time (Single Thread): %d\n", currentTimeSimple/1_000_000);
+        System.out.printf("Single thread execution time: %d\n", currentTimeSimple/1_000_000);
 
-        System.out.printf("SpeadUp = %.2f\n", (double) currentTimeSimple / currentTimeForkJoin);
+        System.out.printf("Speed up = %.2f\n", (double) currentTimeSimple / currentTimeForkJoin);
     }
 
     private static void GetStatistic(HashMap<String, Integer> wordsCounts)
